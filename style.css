@@ -1,6 +1,11 @@
+
 body {
     font-family: Arial, sans-serif;
-    background: #48b4b8;
+    background-color: #f3f0e8;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     color: #222;
@@ -12,6 +17,7 @@ h1 {
     color: #110391;
     margin-bottom: 30px;
 }
+
 nav {
     text-align: center;
     margin-bottom: 40px;
@@ -26,24 +32,28 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
-} 
+}
+
 main {
     max-width: 900px;
     margin: 30px auto;
     padding: 30px;
-    background: rgb(235, 240, 196);
+    background: rgba(255, 255, 255, 0.65);
     border-radius: 15px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
 }
 
 article {
-    margin-top: 40px;
+    margin-top: 30px;
     padding: 25px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
+    border: 1px solid rgba(100, 100, 100, 0.18);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.55);
 }
 
 article h2 {
-    margin-bottom: 15px;
+    text-align: center;
+    margin-bottom: 25px;
 }
 
 article a {
@@ -55,19 +65,15 @@ article a:hover {
     text-decoration: underline;
 }
 
-footer {
-    text-align: center;
-    margin-top: 60px;
-    padding: 20px;
-    border-top: 1px solid #ddd;
-}
 article p {
     line-height: 2;
     font-size: 18px;
     text-align: justify;
 }
 
-article h2 {
+footer {
     text-align: center;
-    margin-bottom: 25px;
+    margin-top: 60px;
+    padding: 20px;
+    border-top: 1px solid #ddd;
 }
