@@ -77,3 +77,61 @@ footer {
     padding: 20px;
     border-top: 1px solid #ddd;
 }
+
+
+/* تنظیم سایت برای گوشی */
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin: 0 10px 25px;
+    }
+
+    nav a {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    main {
+        width: calc(100% - 20px);
+        margin: 15px auto;
+        padding: 16px;
+    }
+
+    article {
+        margin-top: 18px;
+        padding: 15px;
+    }
+
+    article p {
+        font-size: 16px;
+        line-height: 1.9;
+        text-align: right;
+        overflow-wrap: anywhere;
+    }
+
+    footer {
+        margin-top: 30px;
+        padding: 15px;
+    }
+
+    body {
+        background-position: center top;
+    }
+}
