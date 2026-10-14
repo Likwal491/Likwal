@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>چرا مطالعه مهم است؟ - لیکوال</title>
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html"><span class="nav-icon">⌂</span> کورپاڼه</a>
+            <a href="knowledge.html"><span class="nav-icon">♟</span> ټولنیز معلومات</a>
+            <a href="history.html"><span class="nav-icon">▤</span> تاریخی معلومات</a>
+            <a href="society.html"><span class="nav-icon">✎</span> ادبي لیکني</a>
+        
+            <div class="menu-dropdown">
+                <button type="button" class="menu-button" onclick="toggleMenu()">
+                    نور مطالب ☰
+                </button>
+        
+                <div class="menu-list" id="menuList">
+                    <a href="letterature.html">څيړنيزي مقالې</a>
+                    <a href="technology.html">علمي مطالب</a>
+                    <a href="technology.html">ټکنالوژیک معلومات</a>
+                    <a href="about.html">زموږ په اړه</a>
+                </div>
+            </div>
+        </nav>
+
+        <h1>لیکوال</h1>
+    </header>
+
+    <main>
+        <article>
+            <h2>چرا مطالعه مهم است؟</h2>
+
+            <p>
+                ادامه مطلب قبلي...
+            </p>
+
+            <p>
+                کتاب‌ها و منابع علمی، تجربه و دانش نسل‌های مختلف را در اختیار ما
+                قرار می‌دهند و می‌توانند زمینهٔ یادگیری و رشد فکری را فراهم کنند.
+            </p>
+        </article>
+    </main>
+    <footer>
+        <p>© 2026 لیکوال</p>
+    </footer>
+    <footer>
+        <p>© 2026 ابن الطباخ آغانور حنفي </p>
+    </footer>
+    
+<script>
+    function toggleMenu() {
+        document.getElementById("menuList").classList.toggle("show");
+    }
+    
+    document.addEventListener("click", function(event) {
+        const dropdown = document.querySelector(".menu-dropdown");
+        const menu = document.getElementById("menuList");
+    
+        if (dropdown && !dropdown.contains(event.target)) {
+            menu.classList.remove("show");
+        }
+    });
+    </script>
+</body>
+
+</html>

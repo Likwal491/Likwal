@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>تکنالوژی - لیکوال</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html"><span class="nav-icon">⌂</span> کورپاڼه</a>
+            <a href="knowledge.html"><span class="nav-icon">♟</span> ټولنیز معلومات</a>
+            <a href="history.html"><span class="nav-icon">▤</span> تاریخی معلومات</a>
+            <a href="society.html"><span class="nav-icon">✎</span> ادبي لیکني</a>
+        
+            <div class="menu-dropdown">
+                <button type="button" class="menu-button" onclick="toggleMenu()">
+                    نور مطالب ☰
+                </button>
+        
+                <div class="menu-list" id="menuList">
+                    <a href="letterature.html">څيړنيزي مقالې</a>
+                    <a href="technology.html">علمي مطالب</a>
+                    <a href="technology.html">ټکنالوژیک معلومات</a>
+                    <a href="about.html">زموږ په اړه</a>
+                </div>
+            </div>
+        </nav>
+        <h1>تکنالوژی</h1>
+    </header>
+
+    <main>
+        <h2>بخش تکنالوژی</h2>
+
+        <p>
+            در این بخش مطالب مربوط تکنالوژی لیکوال منتشر خواهد شد.
+        </p>
+    </main>
+    <footer>
+        <p>© 2026 ابن الطباخ آغانور حنفي </p>
+    </footer>
+    
+<script>
+    function toggleMenu() {
+        document.getElementById("menuList").classList.toggle("show");
+    }
+    
+    document.addEventListener("click", function(event) {
+        const dropdown = document.querySelector(".menu-dropdown");
+        const menu = document.getElementById("menuList");
+    
+        if (dropdown && !dropdown.contains(event.target)) {
+            menu.classList.remove("show");
+        }
+    });
+    </script>
+</body>
+</html>
