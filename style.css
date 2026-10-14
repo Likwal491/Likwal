@@ -1,0 +1,186 @@
+body{
+    background-color: #ddd0b6;
+}
+/* نوار منو */
+nav.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    direction: rtl;
+
+    width: 100%;
+min-height: 2cm;
+margin: 0 0 10px;
+padding: 0px 0px;
+position: relative;
+top: 0;
+
+    border: 1px solid rgb(248, 112, 0);
+    background: rgb(248, 112, 0);
+    overflow: visible;
+}
+
+/* لینک خانه و دکمه مطالب */
+.navbar > a,
+.menu-button {
+    flex-shrink: 0;
+    color: #020000;
+    font-family: inherit;
+    font-size: 16px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.menu-dropdown {
+    position: relative;
+}
+
+.menu-button {
+    padding: 5px 10px;
+    border: 1px solid #0a0000;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* فهرست مطالب؛ در ابتدا پنهان */
+.menu-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: 160px;
+    margin-top: 5px;
+    padding: 0;
+    background: #d3efff;
+    border: 1px solid #777;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 9999;
+}
+
+/* نمایش فهرست پس از کلیک */
+.menu-list.show {
+    display: block;
+}
+
+.menu-list a {
+    display: block;
+    padding: 10px 14px;
+    color: #000000;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.menu-list a:hover {
+    background: #eee;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav.navbar {
+    margin-top: 0;
+}
+/* منوهای اصلی */
+.navbar > a,
+.navbar .menu-button {
+    font-weight: 700 !important;
+    color: #000000 !important;
+}
+
+/* منوهای بازشونده */
+.navbar .menu-list a {
+    font-weight: 700 !important;
+    color: #000000 !important;
+}
+.nav-icon {
+    color: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 4px;
+    display: inline-block;
+}
+/* اصلاح منوی سایت در موبایل */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    width: 100%;
+    max-width: 100%;
+    min-height: 60px;
+    padding: 8px;
+
+    direction: rtl;
+    overflow: visible;
+}
+
+.navbar > a,
+.navbar .menu-button {
+    flex-shrink: 1;
+    max-width: 100%;
+    font-size: 15px;
+}
+
+.navbar .menu-button {
+    padding: 6px 8px;
+}
+
+.menu-dropdown {
+    position: relative;
+}
+
+.menu-list {
+    right: 0;
+    max-width: calc(100vw - 20px);
+    min-width: 140px;
+}
+
+.menu-list a {
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+/* تنظیم صفحه برای گوشی */
+@media (max-width: 600px) {
+    nav.navbar {
+        gap: 6px;
+        padding: 8px 5px;
+    }
+
+    .navbar > a,
+    .navbar .menu-button {
+        font-size: 14px;
+    }
+
+    .navbar .menu-button {
+        padding: 6px;
+    }
+}
+
+
+
